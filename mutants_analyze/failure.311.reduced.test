@@ -1,0 +1,1 @@
+ASSERT(library.is_playing('Song A') == False) 

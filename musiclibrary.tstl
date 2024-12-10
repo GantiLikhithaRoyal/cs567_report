@@ -1,0 +1,25 @@
+# Import the music library module
+# Import the MusicLibrary class
+from musiclibrary import MusicLibrary
+
+# Create a new MusicLibrary instance
+ACTION("new_library", "library = music_library.MusicLibrary()")
+
+# Add a song to the library
+ACTION("add_song", "library.add_song('Song A', 'Artist A', 'Album A', 2023)")
+
+# Get details of a song
+ACTION("get_song_details", "song = library.get_song('Song A')")
+ASSERT(song['title'] == 'Song A')
+
+# Play a song
+ACTION("play_song", "library.play_song('Song A')")
+ASSERT(library.is_playing('Song A') == True)
+
+# Pause a song
+ACTION("pause_song", "library.pause_song('Song A')")
+ASSERT(library.is_playing('Song A') == False)
+
+# Remove a song from the library
+ACTION("remove_song", "library.remove_song('Song A')")
+ASSERT(library.get_song('Song A') == None)

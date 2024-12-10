@@ -1,0 +1,1 @@
+ASSERT("library.get_song('Song A') == None") 

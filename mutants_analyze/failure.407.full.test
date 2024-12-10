@@ -1,0 +1,1 @@
+ACTION("remove_song", "library.remove_song('Song A')") 

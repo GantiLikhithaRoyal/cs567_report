@@ -1,0 +1,1 @@
+ACTION("get_song_details", "song = library.get_song('Song A')") 

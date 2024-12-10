@@ -1,0 +1,1 @@
+ACTION("add_song", "library.add_song('Song A', 'Artist A', 'Album A', 2023)") 
